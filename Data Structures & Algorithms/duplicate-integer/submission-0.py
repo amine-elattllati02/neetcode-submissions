@@ -1,12 +1,9 @@
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
-
-
-        seen = set()
+        hashset = set()
 
         for n in nums:
-            if n in seen:
+            if n in hashset:
                 return True
-            else:
-                seen.add(n)
+            hashset.add(n)
         return False
